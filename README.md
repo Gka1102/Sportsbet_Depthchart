@@ -1,5 +1,4 @@
 # Sportsbet_Depthchart
-#Sports Depth Chart
 
 ## Introduction
 Depth charts are utilized in all major sports, and they are extremely useful tools for coaches and players alike. This application helps manage list of sports, players & their positions with depth for each sport. 
@@ -34,7 +33,7 @@ Once run(from IDE) you should see something similar to this:
 * It uses an in-memory database (H2) to store the data. You can also use relational database like MySQL or PostgreSQL.
 * To view and query the database you can browse to 
 
-```http://localhost:8090/h2-console ```
+```http://localhost:8090/h2-console 
 
 	Username -> 'sa'
 	Password  -> password 
@@ -52,15 +51,14 @@ sports_depth_chart : To save sports, players, positions & players position depth
 ### For adding new sport
  Add Sports & position details to SportsPositionReference class.
  
-#Endpoints to call:
+# Endpoints to call:
 
 * UseCase 1 : Add player to the sports depth chart
-```
-	
+```	
 	POST http://localhost:8080/depthchart/addPlayer	
 	Note: Accept: application/json
 	Content-Type: application/json
-
+```
 
 
 * UseCase 2 : Remove player from the depth chart for a position. 
@@ -70,10 +68,9 @@ DELETE http://localhost:8080/depthchart/remove/{playerName}/{position}
 ```
 
 * UseCase 3 : Print all depthchart positions.
-```
-	
+```	
 	GET http://localhost:8080/depthchart
-
+```
 
 * UseCase 4 : For a given player find all players below on the depthchart.
 
