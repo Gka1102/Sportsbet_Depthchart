@@ -82,7 +82,7 @@ GET http://localhost:8080/depthchart/{playerName}/{position}
 ![alt text](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Testing_Images/GET_playerUnderDepth.PNG?raw=true)
 
 ### Testing using Postman
-* Refer to document Sports_depthchart.postman_collection.json 
+* Refer to document ![Sports_depthchart.postman_collection.json](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Sports_depthchart.postman_collection.json?raw=true)
 
 ### Junit
 * Run SportsDepthchartApplicationTests as Junit test. 
