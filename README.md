@@ -10,11 +10,11 @@ Usecases covered:
 * Print all depthchart positions.
 * For a given player find all players below on the depthchart.
 
-##Prerequisites
+## Prerequisites
 * java >= 1.8
 * maven 3.8.1
 
-##Requirements
+## Requirements
 * Implemented and tested using Java 11
 * Spring Boot(version 2.6.1) with Tomcat 9 embedded
 * Tests require JUnit and Mockito
@@ -81,10 +81,10 @@ DELETE http://localhost:8080/depthchart/remove/{playerName}/{position}
 GET http://localhost:8080/depthchart/{playerName}/{position}
 ```
 
-##Testing using Postman
+## Testing using Postman
 * Refer to document Sports_depthchart.postman_collection.json 
 
-##Junit
+## Junit
 * Run SportsDepthchartApplicationTests as Junit test.
 * Once run you should see something similar to this
 
