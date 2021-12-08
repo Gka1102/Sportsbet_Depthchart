@@ -18,8 +18,7 @@ import lombok.extern.slf4j.*;
 public class SportsDepthChartService {
 	 	@Autowired
 	    SportsDepthChartRepository depthChartRepo;
-	 	@Autowired
-	    SportsPositionReference sport;
+	    SportsPositionReference sport = new SportsPositionReference();
 	 	private static final org.jboss.logging.Logger log = LoggerFactory
 	            .logger(SportsDepthChartService.class);
 	 	
@@ -81,14 +80,10 @@ public class SportsDepthChartService {
 		}
 		else
 			maxDepth = -1;
-
-		log.info("Outside logic depthPosition: "+depthPosition +"; maxDepth: "+maxDepth);		
 		
 		if(requestDepthChartRecord.getPositionDepth() == null && maxDepth >=0) {
 			//For a given player with no positionDepth add player to end of depth chart
-			log.info("New player with no positonDepth -> "+"Player " +requestplayer +" depthPosition "+depthPosition +"; maxDepth: "+maxDepth);
 			depthPosition = maxDepth+1;	
-			log.info("New player with no positonDepth after-> "+"Player " +requestplayer +" depthPosition "+depthPosition +"; maxDepth: "+maxDepth);
 		} else if(requestDepthChartRecord.getPositionDepth() != null){
 			//For a given player with positionDepth greater than existing
 			depthPosition = requestDepthChartRecord.getPositionDepth();
