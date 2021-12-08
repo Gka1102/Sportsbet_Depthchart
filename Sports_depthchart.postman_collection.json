@@ -1,0 +1,158 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Sports_depthchart",
+		"_postman_id": "f90078e1-36b0-f739-5933-0947f269b822",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/depthchart/remove/alice/WR",
+			"request": {
+				"url": "http://localhost:8080/depthchart/remove/alice/WR",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"bob\",\r\n    \"positionName\": \"KR\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/alice/WR",
+			"request": {
+				"url": "http://localhost:8080/depthchart/alice/WR",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"bob\",\r\n    \"positionName\": \"KR\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/",
+			"request": {
+				"url": "http://localhost:8080/depthchart/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"bob\",\r\n    \"positionName\": \"KR\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/addPlayer",
+			"request": {
+				"url": "http://localhost:8080/depthchart/addPlayer",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"bob\",\r\n    \"positionName\": \"KR\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/addPlayer",
+			"request": {
+				"url": "http://localhost:8080/depthchart/addPlayer",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"charlie\",\r\n    \"positionName\": \"WR\",\r\n    \"positionDepth\": 2\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/addPlayer",
+			"request": {
+				"url": "http://localhost:8080/depthchart/addPlayer",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"alice\",\r\n    \"positionName\": \"WR\",\r\n    \"positionDepth\": 0\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/depthchart/addPlayer",
+			"request": {
+				"url": "http://localhost:8080/depthchart/addPlayer",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\": \"bob\",\r\n    \"positionName\": \"WR\",\r\n    \"positionDepth\": 0\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
