@@ -45,10 +45,10 @@ Once run(from IDE) you should see something similar to this:
 * Player name is unique with combination(if any) of first name & last name.
 * After removing player from depth chart, depthPosition remains the same for existing players.
 
-#### Table used :
+# Table used
 sports_depth_chart : To save sports, players, positions & players position depth
 
-### For adding new sport
+# For adding new sport
  Add Sports & position details to SportsPositionReference class.
  
 # Endpoints to call:
