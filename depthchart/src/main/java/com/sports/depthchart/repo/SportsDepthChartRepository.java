@@ -22,7 +22,7 @@ public interface SportsDepthChartRepository extends JpaRepository<SportsDepthCha
 	SportsDepthChart getExistingPlayerSamePosition(String positionName, String playerName);
 	
 	//For a given player find all players below them on the depth chart
-	@Query("select sd from SportsDepthChart sd where positionName = UPPER(?1) and  positionDepth >= (select positionDepth from SportsDepthChart where playerName = UPPER(?2) and positionName = ?1) and playerName != UPPER(?2) order by positionDepth")   
+	@Query("select sd from SportsDepthChart sd where positionName = UPPER(?1) and  positionDepth >= (select positionDepth from SportsDepthChart where playerName = UPPER(?2) and positionName = UPPER(?1)) and playerName != UPPER(?2) order by positionDepth")   
 	List<SportsDepthChart> getPlayerListWithPos(String positionName, String playerName);
 	
 	//Get existing players list for same position

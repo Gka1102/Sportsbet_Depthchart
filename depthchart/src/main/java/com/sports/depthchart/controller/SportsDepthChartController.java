@@ -11,15 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sports.depthchart.exception.UserNotFoundException;
 import com.sports.depthchart.model.SportsDepthChart;
 import com.sports.depthchart.service.SportsDepthChartService;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @RestController
 public class SportsDepthChartController {
 
@@ -34,7 +31,6 @@ public class SportsDepthChartController {
 	     * @throws Exception
 	     */
 	    @PutMapping(path = "/depthchart/addPlayer",consumes = { MediaType.APPLICATION_JSON_VALUE })
-	    @ResponseBody
 	    public ResponseEntity<Object> addPlayerToDepthchart( @RequestBody SportsDepthChart depthChart)  throws Exception{
 	    	Integer playerCreated = service.createPlayerInDepthChart(depthChart);
 	    	if(playerCreated == 1)
@@ -50,7 +46,6 @@ public class SportsDepthChartController {
      * @throws Exception
      */
     @DeleteMapping(path = "/depthchart/remove/{playerName}/{position}")
-    @ResponseBody
     public ResponseEntity<String> removePlayerFromDepthChart(@PathVariable ("playerName") String playerName, @PathVariable("position") String position) throws Exception{
     	Integer playerDeleted = service.deletePlayerDepth(playerName,position);   
     	if (playerDeleted == 1)
@@ -80,7 +75,6 @@ public class SportsDepthChartController {
      * @throws Exception
      */
     @GetMapping(path = "/depthchart/{playerName}/{position}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
     public List<SportsDepthChart>  getPlayerUnderDepth(@PathVariable("playerName") String playerName, @PathVariable("position") String position) throws Exception{
     	List<SportsDepthChart> playerList = service.getPlayerListWithPosition(playerName, position);   	
     	if (playerList.isEmpty()) {

@@ -29,7 +29,6 @@ public class SportsDepthChart {
 	@Column(name = "player_id", nullable = false)
 	private int playerId;
 	@Column(name = "player_name", nullable = false)
-	@ColumnTransformer(read = "UPPER(player_name)")
     private String playerName;
 	@Column(name = "position_name", nullable = false)
     private String positionName;   

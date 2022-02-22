@@ -14,7 +14,7 @@ Usecases covered:
 * maven 3.8.1
 
 ## Requirements
-* Implemented and tested using Java 11
+* Implemented and tested using Java 8
 * Spring Boot(version 2.6.1) with Tomcat 9 embedded
 * Tests require JUnit and Mockito
 * Project dependencies and compiling managed by Maven
@@ -82,15 +82,12 @@ GET http://localhost:8080/depthchart/{playerName}/{position}
 ![alt text](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Testing_Images/GET_playerUnderDepth.PNG?raw=true)
 
 ### Testing using Postman
-* Refer to document ![Sports_depthchart.postman_collection.json](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Sports_depthchart.postman_collection.json?raw=true)
+* Refer to document ![Sports_depthchart.postman_collection.json](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Sports_depthchart.postman_collection.json?raw=true) 
 
 ### Junit
-* Run SportsDepthchartApplicationTests as Junit test. 
-![alt text](https://github.com/Gka1102/Sportsbet_Depthchart/blob/main/Testing_Images/Junit.PNG?raw=true)
-* Once run you should see something similar to this
-
-		[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.437 s - in com.sports.depthchart.tests.SportsDepthchartApplicationTests
-		
+* Run SportsDepthChartControllerTest as Junit test. 
+* Run SportsDepthChartServiceTest as Junit test. 
+	
 
 
 
